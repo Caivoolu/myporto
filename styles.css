@@ -332,8 +332,13 @@ footer {
 .about-grid {
   display: grid;
   gap: 2rem;
-  grid-template-columns: 1.05fr 0.95fr;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
   align-items: start;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
 }
 
 .about-image {
@@ -341,6 +346,7 @@ footer {
 }
 
 .about-image img {
+  width: 100%;
   border-radius: 1.25rem;
   height: 360px;
   object-fit: cover;
@@ -359,7 +365,7 @@ footer {
   padding: 1.2rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 1rem;
-  background: linear-gradient(135deg, rgba(217, 119, 6, 0.1), rgba(255, 255, 255, 0.03));
+  background: rgba(255, 255, 255, 0.03);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
