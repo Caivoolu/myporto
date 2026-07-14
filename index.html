@@ -3,200 +3,212 @@
  <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260714-05-1435aa9"}');</script><script src="/_sdk/f432b76fb310b513.telemetry_sdk.js" integrity="sha512-9FJQ55EKmmqhyyik8BhrMVfm0+iYYfb8uOlRsjtkxJMEI97qOVEI4PnHohDjQAtvAep0IOEpdQ64eki0sz62ug=="></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MEP &amp; Lightning Protection Portfolio</title>
+  <title>Portfolio MEP</title>
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet">
   <style>
-        :root { --gold: #c9a84c; --dark: #0f1219; --darker: #080b10; }
+        :root { --vh: 1vh; }
         body { font-family: 'DM Sans', sans-serif; }
-        .font-display { font-family: 'Playfair Display', serif; }
-        .nav-link { position: relative; }
-        .nav-link::after { content:''; position:absolute; bottom:-2px; left:0; width:0; height:2px; background:var(--gold); transition:width .3s; }
-        .nav-link:hover::after { width:100%; }
-        .project-card img { transition: transform .5s ease; }
-        .project-card:hover img { transform: scale(1.08); }
-        .fade-in { opacity:0; transform:translateY(30px); transition:opacity .6s ease, transform .6s ease; }
-        .fade-in.visible { opacity:1; transform:translateY(0); }
-        .hero-overlay { background: linear-gradient(135deg, rgba(8,11,16,.85) 0%, rgba(15,18,25,.6) 100%); }
+        .font-heading { font-family: 'Playfair Display', serif; }
+        html { scroll-behavior: smooth; }
+
+        .fade-up { opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease, transform 0.8s ease; }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+        .project-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .project-card:hover { transform: translateY(-8px); box-shadow: 0 20px 60px rgba(217, 119, 6, 0.15); }
+        .project-card:hover img { transform: scale(1.1); }
+        .project-card img { transition: transform 0.5s ease; }
+
+        .hero-text { animation: slideUp 1s ease forwards; opacity: 0; }
+        .hero-text:nth-child(2) { animation-delay: 0.2s; }
+        @keyframes slideUp { to { opacity: 1; transform: translateY(0); } from { opacity: 0; transform: translateY(30px); } }
+
+        .stat-card { background: linear-gradient(135deg, rgba(217,119,6,0.1), rgba(255,255,255,0.02)); border: 1px solid rgba(217,119,6,0.2); }
+        .stat-card:hover { border-color: rgba(217,119,6,0.5); }
+
+        .glow-line { height: 3px; background: linear-gradient(90deg, transparent, #d97706, transparent); }
     </style>
   <script src="/_sdk/0179d719c431a79e.data_sdk.js" type="text/javascript" integrity="sha512-OsRvJkI5GkC3MJQcgotQYotpzrMSX415GiKKgvYdxQEEkzD/fdchShO2FMSy0PJr/tiINMXOk5Vl2zAgg6bUiA=="></script>
   <script src="/_sdk/9432170dbd2ae0df.resizing_sdk.js" type="text/javascript" integrity="sha512-FeT+58sb1f9ejWPWFjCbJvTT+SDwGV+ngrHUnlO7TWEOoqwOLj6p256kO3vOL7DIWl1cIgrobiof8v2bOigwPg=="></script>
  </head>
- <body data-template-id="__page-root" class="bg-[#0f1219] text-gray-200 min-h-screen w-full"><!-- Navigation -->
-  <nav class="fixed top-0 left-0 w-full z-50 bg-[#080b10]/90 backdrop-blur-md border-b border-white/5">
-   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-    <h1 data-template-id="nav-logo" class="canva-text font-display text-xl text-[#c9a84c] font-bold"></h1>
-    <div class="hidden md:flex gap-8"><a href="#home" class="nav-link text-sm text-gray-300 hover:text-white transition">Home</a> <a href="#services" class="nav-link text-sm text-gray-300 hover:text-white transition">Layanan</a> <a href="#projects" class="nav-link text-sm text-gray-300 hover:text-white transition">Proyek</a> <a href="#about" class="nav-link text-sm text-gray-300 hover:text-white transition">Tentang</a> <a href="#contact" class="nav-link text-sm text-gray-300 hover:text-white transition">Kontak</a>
-    </div><button id="menu-btn" class="md:hidden text-gray-300" aria-label="Toggle menu"><i data-lucide="menu" style="width:24px;height:24px"></i></button>
-   </div>
-   <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-3"><a href="#home" class="block text-gray-300">Home</a> <a href="#services" class="block text-gray-300">Layanan</a> <a href="#projects" class="block text-gray-300">Proyek</a> <a href="#about" class="block text-gray-300">Tentang</a> <a href="#contact" class="block text-gray-300">Kontak</a>
-   </div>
-  </nav><!-- Hero -->
-  <header id="home" class="relative w-full" style="height:calc(100 * min(var(--vh,1vh),1vh))"><img data-template-id="hero-image" class="canva-image absolute inset-0 w-full h-full object-cover" loading="lazy">
-   <div class="hero-overlay absolute inset-0 flex items-center justify-center text-center px-6">
-    <div>
-     <h2 data-template-id="hero-title" class="canva-text font-display text-4xl md:text-6xl font-bold text-white mb-4"></h2>
-     <p data-template-id="hero-subtitle" class="canva-text text-lg md:text-xl text-gray-300 max-w-2xl mx-auto"></p>
+ <body data-template-id="__page-root" class="w-full min-h-screen bg-[#0a0a0a] text-white">
+  <nav class="fixed top-0 w-full z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-white/5">
+   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center"><a data-template-id="nav-logo" class="canva-text font-heading text-xl font-bold"></a>
+    <div class="hidden md:flex gap-8"><a href="#hero" data-template-id="nav-home" class="canva-link text-sm hover:text-amber-400 transition-colors"></a> <a href="#projects" data-template-id="nav-projects" class="canva-link text-sm hover:text-amber-400 transition-colors"></a> <a href="#about" data-template-id="nav-about" class="canva-link text-sm hover:text-amber-400 transition-colors"></a> <a href="#contact" data-template-id="nav-contact" class="canva-link text-sm hover:text-amber-400 transition-colors"></a>
     </div>
    </div>
-  </header>
-  <main><!-- Services -->
-   <section id="services" class="py-20 px-6">
-    <div class="max-w-7xl mx-auto">
-     <h2 data-template-id="services-title" class="canva-text font-display text-3xl text-center mb-12 fade-in"></h2>
-     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div data-template-id="svc-1" class="canva-card bg-white/5 border border-white/10 rounded-xl p-6 fade-in">
-       <div class="w-10 h-10 rounded-lg bg-[#c9a84c]/20 flex items-center justify-center mb-4">
-        <i data-lucide="wind" style="width:20px;height:20px;color:#c9a84c"></i>
-       </div>
-       <h3 data-template-id="svc-1-title" class="canva-text font-semibold text-white mb-2"></h3>
-       <p data-template-id="svc-1-desc" class="canva-text text-sm text-gray-400"></p>
+  </nav>
+  <main><!-- Hero -->
+   <section id="hero" class="relative w-full overflow-hidden" style="min-height: calc(100 * min(var(--vh, 1vh), 1vh));">
+    <div class="absolute inset-0"><img data-template-id="hero-bg" class="canva-image w-full h-full object-cover opacity-30" loading="lazy">
+     <div class="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/60 via-transparent to-[#0a0a0a]"></div>
+    </div>
+    <div class="relative z-10 flex flex-col justify-center items-center text-center px-6" style="min-height: calc(100 * min(var(--vh, 1vh), 1vh));">
+     <h1 data-template-id="hero-title" class="canva-text font-heading font-bold mb-4 hero-text"></h1>
+     <p data-template-id="hero-subtitle" class="canva-text max-w-2xl text-lg text-white/60 hero-text"></p><a href="#projects" class="mt-8 hero-text inline-flex items-center gap-2 border border-amber-500/50 text-amber-400 px-6 py-3 rounded-full hover:bg-amber-500/10 transition-colors text-sm font-medium"> <i data-lucide="briefcase" style="width:16px;height:16px;"></i> <span data-template-id="hero-cta" class="canva-text"></span> </a>
+    </div>
+   </section><!-- Stats -->
+   <section class="w-full py-16 px-6">
+    <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
+     <div class="stat-card rounded-xl p-6 text-center fade-up">
+      <div class="text-3xl font-bold text-amber-400" id="stat-years">
+       0
       </div>
-      <div data-template-id="svc-2" class="canva-card bg-white/5 border border-white/10 rounded-xl p-6 fade-in">
-       <div class="w-10 h-10 rounded-lg bg-[#c9a84c]/20 flex items-center justify-center mb-4">
-        <i data-lucide="zap" style="width:20px;height:20px;color:#c9a84c"></i>
-       </div>
-       <h3 data-template-id="svc-2-title" class="canva-text font-semibold text-white mb-2"></h3>
-       <p data-template-id="svc-2-desc" class="canva-text text-sm text-gray-400"></p>
+      <p data-template-id="stat-years-label" class="canva-text text-white/50 text-sm mt-1"></p>
+     </div>
+     <div class="stat-card rounded-xl p-6 text-center fade-up">
+      <div class="text-3xl font-bold text-amber-400" id="stat-projects">
+       0
       </div>
-      <div data-template-id="svc-3" class="canva-card bg-white/5 border border-white/10 rounded-xl p-6 fade-in">
-       <div class="w-10 h-10 rounded-lg bg-[#c9a84c]/20 flex items-center justify-center mb-4">
-        <i data-lucide="droplets" style="width:20px;height:20px;color:#c9a84c"></i>
-       </div>
-       <h3 data-template-id="svc-3-title" class="canva-text font-semibold text-white mb-2"></h3>
-       <p data-template-id="svc-3-desc" class="canva-text text-sm text-gray-400"></p>
+      <p data-template-id="stat-projects-label" class="canva-text text-white/50 text-sm mt-1"></p>
+     </div>
+     <div class="stat-card rounded-xl p-6 text-center fade-up">
+      <div class="text-3xl font-bold text-amber-400" id="stat-clients">
+       0
       </div>
-      <div data-template-id="svc-4" class="canva-card bg-white/5 border border-white/10 rounded-xl p-6 fade-in">
-       <div class="w-10 h-10 rounded-lg bg-[#c9a84c]/20 flex items-center justify-center mb-4">
-        <i data-lucide="flame" style="width:20px;height:20px;color:#c9a84c"></i>
-       </div>
-       <h3 data-template-id="svc-4-title" class="canva-text font-semibold text-white mb-2"></h3>
-       <p data-template-id="svc-4-desc" class="canva-text text-sm text-gray-400"></p>
+      <p data-template-id="stat-clients-label" class="canva-text text-white/50 text-sm mt-1"></p>
+     </div>
+     <div class="stat-card rounded-xl p-6 text-center fade-up">
+      <div class="text-3xl font-bold text-amber-400" id="stat-systems">
+       0
       </div>
-      <div data-template-id="svc-5" class="canva-card bg-white/5 border border-white/10 rounded-xl p-6 fade-in">
-       <div class="w-10 h-10 rounded-lg bg-[#c9a84c]/20 flex items-center justify-center mb-4">
-        <i data-lucide="shield" style="width:20px;height:20px;color:#c9a84c"></i>
-       </div>
-       <h3 data-template-id="svc-5-title" class="canva-text font-semibold text-white mb-2"></h3>
-       <p data-template-id="svc-5-desc" class="canva-text text-sm text-gray-400"></p>
-      </div>
+      <p data-template-id="stat-systems-label" class="canva-text text-white/50 text-sm mt-1"></p>
      </div>
     </div>
-   </section><!-- Projects -->
-   <section id="projects" class="py-20 px-6 bg-[#080b10]">
-    <div class="max-w-7xl mx-auto">
-     <h2 data-template-id="projects-title" class="canva-text font-display text-3xl text-center mb-12 fade-in"></h2>
-     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="project-card rounded-xl overflow-hidden border border-white/10 fade-in">
-       <div class="aspect-[4/3] overflow-hidden">
-        <img data-template-id="proj-1-img" class="canva-image w-full h-full object-cover" loading="lazy">
+   </section>
+   <div class="glow-line max-w-md mx-auto"></div><!-- Projects -->
+   <section id="projects" class="w-full py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+     <h2 data-template-id="projects-heading" class="canva-text font-heading font-bold text-center mb-4 fade-up"></h2>
+     <p data-template-id="projects-sub" class="canva-text text-center text-white/50 mb-16 fade-up"></p>
+     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="project-card rounded-2xl overflow-hidden bg-white/[0.03] border border-white/10 fade-up">
+       <div class="overflow-hidden h-52 relative"><img data-template-id="project-1-img" class="canva-image w-full h-full object-cover" loading="lazy"> <span data-template-id="project-1-tag" class="canva-tag absolute top-3 left-3 bg-amber-500/90 text-black text-xs font-semibold px-3 py-1 rounded-full"></span>
        </div>
-       <div class="p-4">
-        <h3 data-template-id="proj-1-title" class="canva-text font-semibold text-white"></h3>
-        <p data-template-id="proj-1-desc" class="canva-text text-sm text-gray-400 mt-1"></p>
-       </div>
-      </div>
-      <div class="project-card rounded-xl overflow-hidden border border-white/10 fade-in">
-       <div class="aspect-[4/3] overflow-hidden">
-        <img data-template-id="proj-2-img" class="canva-image w-full h-full object-cover" loading="lazy">
-       </div>
-       <div class="p-4">
-        <h3 data-template-id="proj-2-title" class="canva-text font-semibold text-white"></h3>
-        <p data-template-id="proj-2-desc" class="canva-text text-sm text-gray-400 mt-1"></p>
+       <div class="p-6">
+        <h3 data-template-id="project-1-title" class="canva-text font-heading font-bold mb-2"></h3>
+        <p data-template-id="project-1-desc" class="canva-text text-white/50 text-sm leading-relaxed"></p>
        </div>
       </div>
-      <div class="project-card rounded-xl overflow-hidden border border-white/10 fade-in">
-       <div class="aspect-[4/3] overflow-hidden">
-        <img data-template-id="proj-3-img" class="canva-image w-full h-full object-cover" loading="lazy">
+      <div class="project-card rounded-2xl overflow-hidden bg-white/[0.03] border border-white/10 fade-up">
+       <div class="overflow-hidden h-52 relative"><img data-template-id="project-2-img" class="canva-image w-full h-full object-cover" loading="lazy"> <span data-template-id="project-2-tag" class="canva-tag absolute top-3 left-3 bg-amber-500/90 text-black text-xs font-semibold px-3 py-1 rounded-full"></span>
        </div>
-       <div class="p-4">
-        <h3 data-template-id="proj-3-title" class="canva-text font-semibold text-white"></h3>
-        <p data-template-id="proj-3-desc" class="canva-text text-sm text-gray-400 mt-1"></p>
-       </div>
-      </div>
-      <div class="project-card rounded-xl overflow-hidden border border-white/10 fade-in">
-       <div class="aspect-[4/3] overflow-hidden">
-        <img data-template-id="proj-4-img" class="canva-image w-full h-full object-cover" loading="lazy">
-       </div>
-       <div class="p-4">
-        <h3 data-template-id="proj-4-title" class="canva-text font-semibold text-white"></h3>
-        <p data-template-id="proj-4-desc" class="canva-text text-sm text-gray-400 mt-1"></p>
+       <div class="p-6">
+        <h3 data-template-id="project-2-title" class="canva-text font-heading font-bold mb-2"></h3>
+        <p data-template-id="project-2-desc" class="canva-text text-white/50 text-sm leading-relaxed"></p>
        </div>
       </div>
-      <div class="project-card rounded-xl overflow-hidden border border-white/10 fade-in">
-       <div class="aspect-[4/3] overflow-hidden">
-        <img data-template-id="proj-5-img" class="canva-image w-full h-full object-cover" loading="lazy">
+      <div class="project-card rounded-2xl overflow-hidden bg-white/[0.03] border border-white/10 fade-up">
+       <div class="overflow-hidden h-52 relative"><img data-template-id="project-3-img" class="canva-image w-full h-full object-cover" loading="lazy"> <span data-template-id="project-3-tag" class="canva-tag absolute top-3 left-3 bg-amber-500/90 text-black text-xs font-semibold px-3 py-1 rounded-full"></span>
        </div>
-       <div class="p-4">
-        <h3 data-template-id="proj-5-title" class="canva-text font-semibold text-white"></h3>
-        <p data-template-id="proj-5-desc" class="canva-text text-sm text-gray-400 mt-1"></p>
+       <div class="p-6">
+        <h3 data-template-id="project-3-title" class="canva-text font-heading font-bold mb-2"></h3>
+        <p data-template-id="project-3-desc" class="canva-text text-white/50 text-sm leading-relaxed"></p>
        </div>
       </div>
-      <div class="project-card rounded-xl overflow-hidden border border-white/10 fade-in">
-       <div class="aspect-[4/3] overflow-hidden">
-        <img data-template-id="proj-6-img" class="canva-image w-full h-full object-cover" loading="lazy">
+      <div class="project-card rounded-2xl overflow-hidden bg-white/[0.03] border border-white/10 fade-up">
+       <div class="overflow-hidden h-52 relative"><img data-template-id="project-4-img" class="canva-image w-full h-full object-cover" loading="lazy"> <span data-template-id="project-4-tag" class="canva-tag absolute top-3 left-3 bg-amber-500/90 text-black text-xs font-semibold px-3 py-1 rounded-full"></span>
        </div>
-       <div class="p-4">
-        <h3 data-template-id="proj-6-title" class="canva-text font-semibold text-white"></h3>
-        <p data-template-id="proj-6-desc" class="canva-text text-sm text-gray-400 mt-1"></p>
+       <div class="p-6">
+        <h3 data-template-id="project-4-title" class="canva-text font-heading font-bold mb-2"></h3>
+        <p data-template-id="project-4-desc" class="canva-text text-white/50 text-sm leading-relaxed"></p>
+       </div>
+      </div>
+      <div class="project-card rounded-2xl overflow-hidden bg-white/[0.03] border border-white/10 fade-up">
+       <div class="overflow-hidden h-52 relative"><img data-template-id="project-5-img" class="canva-image w-full h-full object-cover" loading="lazy"> <span data-template-id="project-5-tag" class="canva-tag absolute top-3 left-3 bg-amber-500/90 text-black text-xs font-semibold px-3 py-1 rounded-full"></span>
+       </div>
+       <div class="p-6">
+        <h3 data-template-id="project-5-title" class="canva-text font-heading font-bold mb-2"></h3>
+        <p data-template-id="project-5-desc" class="canva-text text-white/50 text-sm leading-relaxed"></p>
+       </div>
+      </div>
+      <div class="project-card rounded-2xl overflow-hidden bg-white/[0.03] border border-white/10 fade-up">
+       <div class="overflow-hidden h-52 relative"><img data-template-id="project-6-img" class="canva-image w-full h-full object-cover" loading="lazy"> <span data-template-id="project-6-tag" class="canva-tag absolute top-3 left-3 bg-amber-500/90 text-black text-xs font-semibold px-3 py-1 rounded-full"></span>
+       </div>
+       <div class="p-6">
+        <h3 data-template-id="project-6-title" class="canva-text font-heading font-bold mb-2"></h3>
+        <p data-template-id="project-6-desc" class="canva-text text-white/50 text-sm leading-relaxed"></p>
        </div>
       </div>
      </div>
     </div>
    </section><!-- About -->
-   <section id="about" class="py-20 px-6">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-     <div class="fade-in"><img data-template-id="about-image" class="canva-image w-full rounded-xl object-cover aspect-[4/3]" loading="lazy">
+   <section id="about" class="w-full py-24 px-6 bg-white/[0.02]">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+     <div class="flex justify-center fade-up">
+      <div class="relative">
+       <div class="absolute -inset-2 bg-gradient-to-br from-amber-500/30 to-transparent rounded-2xl blur-sm"></div><img data-template-id="about-photo" class="canva-image relative w-72 h-72 object-cover rounded-2xl" loading="lazy">
+      </div>
      </div>
-     <div class="fade-in">
-      <h2 data-template-id="about-title" class="canva-text font-display text-3xl mb-4"></h2>
-      <p data-template-id="about-desc" class="canva-text text-gray-400 leading-relaxed"></p>
+     <div class="fade-up">
+      <h2 data-template-id="about-heading" class="canva-text font-heading font-bold mb-6"></h2>
+      <p data-template-id="about-text" class="canva-text text-white/60 leading-relaxed mb-6"></p>
+      <div class="flex flex-wrap gap-3"><span data-template-id="skill-1" class="canva-tag bg-white/5 border border-white/10 px-4 py-2 rounded-lg text-sm text-white/70"></span> <span data-template-id="skill-2" class="canva-tag bg-white/5 border border-white/10 px-4 py-2 rounded-lg text-sm text-white/70"></span> <span data-template-id="skill-3" class="canva-tag bg-white/5 border border-white/10 px-4 py-2 rounded-lg text-sm text-white/70"></span> <span data-template-id="skill-4" class="canva-tag bg-white/5 border border-white/10 px-4 py-2 rounded-lg text-sm text-white/70"></span>
+      </div>
      </div>
     </div>
    </section><!-- Contact -->
-   <section id="contact" class="py-20 px-6 bg-[#080b10]">
-    <div class="max-w-3xl mx-auto text-center fade-in">
-     <h2 data-template-id="contact-title" class="canva-text font-display text-3xl mb-4"></h2>
-     <p data-template-id="contact-desc" class="canva-text text-gray-400 mb-8"></p>
-     <div class="flex flex-col sm:flex-row gap-6 justify-center">
-      <div class="flex items-center gap-3">
-       <i data-lucide="phone" style="width:20px;height:20px;color:#c9a84c"></i><span data-template-id="contact-phone" class="canva-text text-gray-300"></span>
+   <section id="contact" class="w-full py-24 px-6">
+    <div class="max-w-xl mx-auto fade-up">
+     <h2 data-template-id="contact-heading" class="canva-text font-heading font-bold text-center mb-4"></h2>
+     <p data-template-id="contact-sub" class="canva-text text-center text-white/50 mb-12"></p>
+     <form id="contact-form" class="space-y-5">
+      <div><label data-template-id="contact-name-label" for="name" class="canva-text block text-sm mb-2 text-white/60"></label> <input id="name" type="text" data-template-id="contact-name-input" class="canva-input w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-400/50 transition-colors">
       </div>
-      <div class="flex items-center gap-3">
-       <i data-lucide="mail" style="width:20px;height:20px;color:#c9a84c"></i><span data-template-id="contact-email" class="canva-text text-gray-300"></span>
+      <div><label data-template-id="contact-email-label" for="email" class="canva-text block text-sm mb-2 text-white/60"></label> <input id="email" type="email" data-template-id="contact-email-input" class="canva-input w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-400/50 transition-colors">
       </div>
-     </div>
+      <div><label data-template-id="contact-msg-label" for="message" class="canva-text block text-sm mb-2 text-white/60"></label> <textarea id="message" rows="4" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-400/50 transition-colors"></textarea>
+      </div><button data-template-id="contact-submit" type="submit" class="canva-button w-full py-3 rounded-xl font-semibold transition-all hover:shadow-lg hover:shadow-amber-500/20"></button>
+     </form>
+     <p id="success-msg" class="hidden text-center text-amber-400 mt-6 font-medium">✓ Pesan berhasil dikirim!</p>
     </div>
    </section>
-  </main><!-- Footer -->
-  <footer data-template-id="footer-section" class="canva-footer border-t border-white/5 py-6 px-6 text-center">
-   <p data-template-id="footer-text" class="canva-text text-sm text-gray-500"></p>
+  </main>
+  <footer class="w-full py-8 border-t border-white/5 text-center">
+   <p data-template-id="footer-text" class="canva-text text-white/30 text-sm"></p>
   </footer>
   <script src="/_sdk/719055fef2a85d14.editing_sdk.js" integrity="sha512-kFqrdGgIiTOsu307feB5Cy3JVP9IayftsmCIZ0csxYBGuBmJQPhyvcnmKR8F0fTW97h5s1gAvz3SumI8zJ6OxQ=="></script>
   <script>
         lucide.createIcons();
 
-        // Mobile menu
-        document.getElementById('menu-btn').addEventListener('click', () => {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(a => {
-            a.addEventListener('click', e => {
-                e.preventDefault();
-                document.getElementById('mobile-menu').classList.add('hidden');
-                const target = document.querySelector(a.getAttribute('href'));
-                if (target) target.scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-
-        // Fade-in on scroll
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+        // Scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
         }, { threshold: 0.1 });
-        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+        // Counter animation
+        let counted = false;
+        const statsObs = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting && !counted) {
+                counted = true;
+                animateCount('stat-years', 7, '+');
+                animateCount('stat-projects', 50, '+');
+                animateCount('stat-clients', 30, '+');
+                animateCount('stat-systems', 120, '+');
+            }
+        }, { threshold: 0.3 });
+        statsObs.observe(document.getElementById('stat-years'));
+
+        function animateCount(id, target, suffix) {
+            const el = document.getElementById(id);
+            let current = 0;
+            const step = Math.max(1, Math.floor(target / 40));
+            const interval = setInterval(() => {
+                current += step;
+                if (current >= target) { current = target; clearInterval(interval); }
+                el.textContent = current + suffix;
+            }, 30);
+        }
+
+        // Contact form
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            this.classList.add('hidden');
+            document.getElementById('success-msg').classList.remove('hidden');
+        });
     </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1b0de80738d7549',t:'MTc4NDAzNTY5MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1b2d2e4777e5fb3',t:'MTc4NDA1NjE4Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
