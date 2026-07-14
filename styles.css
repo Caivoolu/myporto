@@ -345,6 +345,23 @@ footer {
   margin-top: 1.25rem;
 }
 
+.contact-block {
+  margin-top: 1.5rem;
+  padding: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.contact-block h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+}
+
+.contact-block p {
+  margin: 0 0 1rem;
+}
+
 .pill-list span {
   padding: 0.6rem 0.9rem;
   border: 1px solid rgba(255, 255, 255, 0.14);
