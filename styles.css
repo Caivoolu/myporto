@@ -373,17 +373,37 @@ footer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
   color: #fff;
-  transition: transform 0.2s ease, background 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .social-links a:hover {
-  transform: translateY(-2px);
-  background: rgba(217, 119, 6, 0.25);
+  transform: translateY(-3px) scale(1.04);
+  filter: brightness(1.08);
+}
+
+.social-link.whatsapp {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+}
+
+.social-link.gmail {
+  background: linear-gradient(135deg, #ea4335, #c5221f);
+}
+
+.social-link.linkedin {
+  background: linear-gradient(135deg, #0a66c2, #004182);
+}
+
+.social-link.jobstreet {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.social-link.glints {
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
 }
 
 #contact-form {
