@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="id">
+ <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260714-05-1435aa9"}');</script><script src="/_sdk/f432b76fb310b513.telemetry_sdk.js" integrity="sha512-9FJQ55EKmmqhyyik8BhrMVfm0+iYYfb8uOlRsjtkxJMEI97qOVEI4PnHohDjQAtvAep0IOEpdQ64eki0sz62ug=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEP &amp; Lightning Protection Portfolio</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet">
+  <style>
+        :root { --gold: #c9a84c; --dark: #0f1219; --darker: #080b10; }
+        body { font-family: 'DM Sans', sans-serif; }
+        .font-display { font-family: 'Playfair Display', serif; }
+        .nav-link { position: relative; }
+        .nav-link::after { content:''; position:absolute; bottom:-2px; left:0; width:0; height:2px; background:var(--gold); transition:width .3s; }
+        .nav-link:hover::after { width:100%; }
+        .project-card img { transition: transform .5s ease; }
+        .project-card:hover img { transform: scale(1.08); }
+        .fade-in { opacity:0; transform:translateY(30px); transition:opacity .6s ease, transform .6s ease; }
+        .fade-in.visible { opacity:1; transform:translateY(0); }
+        .hero-overlay { background: linear-gradient(135deg, rgba(8,11,16,.85) 0%, rgba(15,18,25,.6) 100%); }
+    </style>
+  <script src="/_sdk/0179d719c431a79e.data_sdk.js" type="text/javascript" integrity="sha512-OsRvJkI5GkC3MJQcgotQYotpzrMSX415GiKKgvYdxQEEkzD/fdchShO2FMSy0PJr/tiINMXOk5Vl2zAgg6bUiA=="></script>
+  <script src="/_sdk/9432170dbd2ae0df.resizing_sdk.js" type="text/javascript" integrity="sha512-FeT+58sb1f9ejWPWFjCbJvTT+SDwGV+ngrHUnlO7TWEOoqwOLj6p256kO3vOL7DIWl1cIgrobiof8v2bOigwPg=="></script>
+ </head>
+ <body data-template-id="__page-root" class="bg-[#0f1219] text-gray-200 min-h-screen w-full"><!-- Navigation -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-[#080b10]/90 backdrop-blur-md border-b border-white/5">
+   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <h1 data-template-id="nav-logo" class="canva-text font-display text-xl text-[#c9a84c] font-bold"></h1>
+    <div class="hidden md:flex gap-8"><a href="#home" class="nav-link text-sm text-gray-300 hover:text-white transition">Home</a> <a href="#services" class="nav-link text-sm text-gray-300 hover:text-white transition">Layanan</a> <a href="#projects" class="nav-link text-sm text-gray-300 hover:text-white transition">Proyek</a> <a href="#about" class="nav-link text-sm text-gray-300 hover:text-white transition">Tentang</a> <a href="#contact" class="nav-link text-sm text-gray-300 hover:text-white transition">Kontak</a>
+    </div><button id="menu-btn" class="md:hidden text-gray-300" aria-label="Toggle menu"><i data-lucide="menu" style="width:24px;height:24px"></i></button>
+   </div>
+   <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-3"><a href="#home" class="block text-gray-300">Home</a> <a href="#services" class="block text-gray-300">Layanan</a> <a href="#projects" class="block text-gray-300">Proyek</a> <a href="#about" class="block text-gray-300">Tentang</a> <a href="#contact" class="block text-gray-300">Kontak</a>
+   </div>
+  </nav><!-- Hero -->
+  <header id="home" class="relative w-full" style="height:calc(100 * min(var(--vh,1vh),1vh))"><img data-template-id="hero-image" class="canva-image absolute inset-0 w-full h-full object-cover" loading="lazy">
+   <div class="hero-overlay absolute inset-0 flex items-center justify-center text-center px-6">
+    <div>
+     <h2 data-template-id="hero-title" class="canva-text font-display text-4xl md:text-6xl font-bold text-white mb-4"></h2>
+     <p data-template-id="hero-subtitle" class="canva-text text-lg md:text-xl text-gray-300 max-w-2xl mx-auto"></p>
+    </div>
+   </div>
+  </header>
+  <main><!-- Services -->
+   <section id="services" class="py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+     <h2 data-template-id="services-title" class="canva-text font-display text-3xl text-center mb-12 fade-in"></h2>
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div data-template-id="svc-1" class="canva-card bg-white/5 border border-white/10 rounded-xl p-6 fade-in">
+       <div class="w-10 h-10 rounded-lg bg-[#c9a84c]/20 flex items-center justify-center mb-4">
+        <i data-lucide="wind" style="width:20px;height:20px;color:#c9a84c"></i>
+       </div>
+       <h3 data-template-id="svc-1-title" class="canva-text font-semibold text-white mb-2"></h3>
+       <p data-template-id="svc-1-desc" class="canva-text text-sm text-gray-400"></p>
+      </div>
+      <div data-template-id="svc-2" class="canva-card bg-white/5 border border-white/10 rounded-xl p-6 fade-in">
+       <div class="w-10 h-10 rounded-lg bg-[#c9a84c]/20 flex items-center justify-center mb-4">
+        <i data-lucide="zap" style="width:20px;height:20px;color:#c9a84c"></i>
+       </div>
+       <h3 data-template-id="svc-2-title" class="canva-text font-semibold text-white mb-2"></h3>
+       <p data-template-id="svc-2-desc" class="canva-text text-sm text-gray-400"></p>
+      </div>
+      <div data-template-id="svc-3" class="canva-card bg-white/5 border border-white/10 rounded-xl p-6 fade-in">
+       <div class="w-10 h-10 rounded-lg bg-[#c9a84c]/20 flex items-center justify-center mb-4">
+        <i data-lucide="droplets" style="width:20px;height:20px;color:#c9a84c"></i>
+       </div>
+       <h3 data-template-id="svc-3-title" class="canva-text font-semibold text-white mb-2"></h3>
+       <p data-template-id="svc-3-desc" class="canva-text text-sm text-gray-400"></p>
+      </div>
+      <div data-template-id="svc-4" class="canva-card bg-white/5 border border-white/10 rounded-xl p-6 fade-in">
+       <div class="w-10 h-10 rounded-lg bg-[#c9a84c]/20 flex items-center justify-center mb-4">
+        <i data-lucide="flame" style="width:20px;height:20px;color:#c9a84c"></i>
+       </div>
+       <h3 data-template-id="svc-4-title" class="canva-text font-semibold text-white mb-2"></h3>
+       <p data-template-id="svc-4-desc" class="canva-text text-sm text-gray-400"></p>
+      </div>
+      <div data-template-id="svc-5" class="canva-card bg-white/5 border border-white/10 rounded-xl p-6 fade-in">
+       <div class="w-10 h-10 rounded-lg bg-[#c9a84c]/20 flex items-center justify-center mb-4">
+        <i data-lucide="shield" style="width:20px;height:20px;color:#c9a84c"></i>
+       </div>
+       <h3 data-template-id="svc-5-title" class="canva-text font-semibold text-white mb-2"></h3>
+       <p data-template-id="svc-5-desc" class="canva-text text-sm text-gray-400"></p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Projects -->
+   <section id="projects" class="py-20 px-6 bg-[#080b10]">
+    <div class="max-w-7xl mx-auto">
+     <h2 data-template-id="projects-title" class="canva-text font-display text-3xl text-center mb-12 fade-in"></h2>
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="project-card rounded-xl overflow-hidden border border-white/10 fade-in">
+       <div class="aspect-[4/3] overflow-hidden">
+        <img data-template-id="proj-1-img" class="canva-image w-full h-full object-cover" loading="lazy">
+       </div>
+       <div class="p-4">
+        <h3 data-template-id="proj-1-title" class="canva-text font-semibold text-white"></h3>
+        <p data-template-id="proj-1-desc" class="canva-text text-sm text-gray-400 mt-1"></p>
+       </div>
+      </div>
+      <div class="project-card rounded-xl overflow-hidden border border-white/10 fade-in">
+       <div class="aspect-[4/3] overflow-hidden">
+        <img data-template-id="proj-2-img" class="canva-image w-full h-full object-cover" loading="lazy">
+       </div>
+       <div class="p-4">
+        <h3 data-template-id="proj-2-title" class="canva-text font-semibold text-white"></h3>
+        <p data-template-id="proj-2-desc" class="canva-text text-sm text-gray-400 mt-1"></p>
+       </div>
+      </div>
+      <div class="project-card rounded-xl overflow-hidden border border-white/10 fade-in">
+       <div class="aspect-[4/3] overflow-hidden">
+        <img data-template-id="proj-3-img" class="canva-image w-full h-full object-cover" loading="lazy">
+       </div>
+       <div class="p-4">
+        <h3 data-template-id="proj-3-title" class="canva-text font-semibold text-white"></h3>
+        <p data-template-id="proj-3-desc" class="canva-text text-sm text-gray-400 mt-1"></p>
+       </div>
+      </div>
+      <div class="project-card rounded-xl overflow-hidden border border-white/10 fade-in">
+       <div class="aspect-[4/3] overflow-hidden">
+        <img data-template-id="proj-4-img" class="canva-image w-full h-full object-cover" loading="lazy">
+       </div>
+       <div class="p-4">
+        <h3 data-template-id="proj-4-title" class="canva-text font-semibold text-white"></h3>
+        <p data-template-id="proj-4-desc" class="canva-text text-sm text-gray-400 mt-1"></p>
+       </div>
+      </div>
+      <div class="project-card rounded-xl overflow-hidden border border-white/10 fade-in">
+       <div class="aspect-[4/3] overflow-hidden">
+        <img data-template-id="proj-5-img" class="canva-image w-full h-full object-cover" loading="lazy">
+       </div>
+       <div class="p-4">
+        <h3 data-template-id="proj-5-title" class="canva-text font-semibold text-white"></h3>
+        <p data-template-id="proj-5-desc" class="canva-text text-sm text-gray-400 mt-1"></p>
+       </div>
+      </div>
+      <div class="project-card rounded-xl overflow-hidden border border-white/10 fade-in">
+       <div class="aspect-[4/3] overflow-hidden">
+        <img data-template-id="proj-6-img" class="canva-image w-full h-full object-cover" loading="lazy">
+       </div>
+       <div class="p-4">
+        <h3 data-template-id="proj-6-title" class="canva-text font-semibold text-white"></h3>
+        <p data-template-id="proj-6-desc" class="canva-text text-sm text-gray-400 mt-1"></p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- About -->
+   <section id="about" class="py-20 px-6">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+     <div class="fade-in"><img data-template-id="about-image" class="canva-image w-full rounded-xl object-cover aspect-[4/3]" loading="lazy">
+     </div>
+     <div class="fade-in">
+      <h2 data-template-id="about-title" class="canva-text font-display text-3xl mb-4"></h2>
+      <p data-template-id="about-desc" class="canva-text text-gray-400 leading-relaxed"></p>
+     </div>
+    </div>
+   </section><!-- Contact -->
+   <section id="contact" class="py-20 px-6 bg-[#080b10]">
+    <div class="max-w-3xl mx-auto text-center fade-in">
+     <h2 data-template-id="contact-title" class="canva-text font-display text-3xl mb-4"></h2>
+     <p data-template-id="contact-desc" class="canva-text text-gray-400 mb-8"></p>
+     <div class="flex flex-col sm:flex-row gap-6 justify-center">
+      <div class="flex items-center gap-3">
+       <i data-lucide="phone" style="width:20px;height:20px;color:#c9a84c"></i><span data-template-id="contact-phone" class="canva-text text-gray-300"></span>
+      </div>
+      <div class="flex items-center gap-3">
+       <i data-lucide="mail" style="width:20px;height:20px;color:#c9a84c"></i><span data-template-id="contact-email" class="canva-text text-gray-300"></span>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main><!-- Footer -->
+  <footer data-template-id="footer-section" class="canva-footer border-t border-white/5 py-6 px-6 text-center">
+   <p data-template-id="footer-text" class="canva-text text-sm text-gray-500"></p>
+  </footer>
+  <script src="/_sdk/719055fef2a85d14.editing_sdk.js" integrity="sha512-kFqrdGgIiTOsu307feB5Cy3JVP9IayftsmCIZ0csxYBGuBmJQPhyvcnmKR8F0fTW97h5s1gAvz3SumI8zJ6OxQ=="></script>
+  <script>
+        lucide.createIcons();
+
+        // Mobile menu
+        document.getElementById('menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                e.preventDefault();
+                document.getElementById('mobile-menu').classList.add('hidden');
+                const target = document.querySelector(a.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Fade-in on scroll
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1b0de80738d7549',t:'MTc4NDAzNTY5MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
