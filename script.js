@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
       successMsg.classList.remove('hidden');
     });
   }
+
 });
 
 function animateCount(id, target, suffix) {
