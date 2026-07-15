@@ -4,57 +4,55 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio MEP</title>
-  <!-- ... head content from original ... -->
+  <!-- Link font, Lucide icons, dan styles.css -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- ... navbar, hero, and stats sections ... -->
-
+  <!-- ... (navigasi & header) ... -->
+  <main>
+    <!-- ... (hero, stats) ... -->
     <section id="projects" class="section">
       <div class="container">
-        <!-- ... section-heading ... -->
+        <!-- ... (heading) ... -->
         <div class="projects-grid">
-          <!-- Add data-index="0" through "5" to the article tags for mapping to the JS array -->
+          <!-- Tambahkan data-index="0" sampai data-index="5" di setiap .project-card -->
           <article class="project-card fade-up" data-index="0" style="cursor: pointer;">
-            <!-- ... content for project 1 ... -->
+            <!-- konten kartu 1 -->
           </article>
-          <article class="project-card fade-up" data-index="1" style="cursor: pointer;">
-            <!-- ... content for project 2 ... -->
-          </article>
-          <!-- ... additional projects (2-5) with corresponding index ... -->
+          <!-- ... 5 kartu lainnya ... -->
         </div>
       </div>
     </section>
-
-  <!-- ... about section ... -->
-
-  <!-- MODAL POP-UP (Insert at the end of <body>) -->
+    <!-- ... (about, footer) ... -->
+  </main>
+  
+  <!-- MODAL STRUCTURE (Tambahkan sebelum penutup </body>) -->
   <div id="project-modal" class="modal hidden">
     <div class="modal-overlay"></div>
     <div class="modal-wrapper">
-      <button class="modal-close" aria-label="Close modal"><i data-lucide="x"></i></button>
+      <button class="modal-close" aria-label="Close modal">&times;</button>
       <div class="modal-content-layout">
-        <!-- Left: Gallery, Right: Info -->
+        <!-- Galeri Slider -->
         <div class="modal-gallery-side">
           <div class="slider-container">
             <div class="slider-track" id="modal-slider-track"></div>
-            <button class="slider-btn prev-btn" id="modal-prev-btn"><i data-lucide="chevron-left"></i></button>
-            <button class="slider-btn next-btn" id="modal-next-btn"><i data-lucide="chevron-right"></i></button>
+            <button class="slider-btn prev-btn" id="modal-prev-btn">&#10094;</button>
+            <button class="slider-btn next-btn" id="modal-next-btn">&#10095;</button>
           </div>
           <div class="slider-dots" id="modal-slider-dots"></div>
         </div>
+        <!-- Konten Teks -->
         <div class="modal-info-side">
           <span class="tag" id="modal-tag"></span>
-          <h3 id="modal-title" class="font-heading"></h3>
+          <h3 id="modal-title"></h3>
           <div class="modal-scroll-text">
             <p id="modal-desc-long"></p>
-            <h4>Key Highlights / Scope:</h4>
             <ul id="modal-highlights-list"></ul>
           </div>
         </div>
       </div>
     </div>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
