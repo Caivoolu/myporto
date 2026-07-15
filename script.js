@@ -1,81 +1,72 @@
-// Database portofolio terstruktur Anda
-window.projectData = [ /* ... content of window.projectData from prompt ... */ ];
-
+@@ -1,57 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // ... (Other animations like fade-up and stats) ...
+  lucide.createIcons();
 
-  // 3. Logika Utama Sistem Modal & Multi-Image Slider
-  const modal = document.getElementById('project-modal');
-  const closeBtn = modal.querySelector('.modal-close');
-  const overlay = modal.querySelector('.modal-overlay');
-  const track = document.getElementById('modal-slider-track');
-  const dotsContainer = document.getElementById('modal-slider-dots');
-  const prevBtn = document.getElementById('modal-prev-btn');
-  const nextBtn = document.getElementById('modal-next-btn');
-
-  let currentSlideIndex = 0;
-  let totalSlides = 0;
-
-  function updateSliderPosition() {
-    track.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
-    document.querySelectorAll('.modal .dot').forEach((dot, idx) => {
-      dot.classList.toggle('active', idx === currentSlideIndex);
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
     });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.fade-up').forEach((el) => observer.observe(el));
+
+  let counted = false;
+  const statsObserver = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting && !counted) {
+      counted = true;
+      animateCount('stat-years', 7, '+');
+      animateCount('stat-projects', 50, '+');
+      animateCount('stat-clients', 30, '+');
+      animateCount('stat-systems', 120, '+');
+  // ... (Inisialisasi Lucide & IntersectionObserver ada di sini) ...
+
+  // Data proyek untuk Modal
+  const projectDatabase = {
+    electrical: {
+      tag: "Electrical",
+      title: "Distribusi Listrik Modern",
+      desc: "Penjelasan lengkap...",
+      images: ["img1.jpg", "img2.jpg"],
+      techDetails: ["Detail 1", "Detail 2"]
+    }
+  }, { threshold: 0.3 });
+
+  const statTarget = document.getElementById('stat-years');
+  if (statTarget) {
+    statsObserver.observe(statTarget);
   }
 
-  // Event handler klik kartu proyek
-  document.querySelectorAll('.project-card').forEach(card => {
-    card.addEventListener('click', () => {
-      const index = card.getAttribute('data-index');
-      const data = window.projectData[index];
-      if (!data) return;
+  const form = document.getElementById('contact-form');
+  const successMsg = document.getElementById('success-msg');
 
-      // Suntik isi konten modal secara dinamis
-      document.getElementById('modal-tag').textContent = data.tag;
-      document.getElementById('modal-title').textContent = data.title;
-      document.getElementById('modal-desc-long').textContent = data.longDescription;
-      const highlightsList = document.getElementById('modal-highlights-list');
-      highlightsList.innerHTML = data.highlights.map(item => `<li>${item}</li>`).join('');
-      track.innerHTML = data.images.map(img => `<img src="${img.src}" alt="${img.alt}">`).join('');
-      dotsContainer.innerHTML = data.images.map((_, idx) => `<span class="dot ${idx === 0 ? 'active' : ''}" data-goto="${idx}"></span>`).join('');
-
-      currentSlideIndex = 0;
-      totalSlides = data.images.length;
-      updateSliderPosition();
-
-      // Ikat event handler klik langsung ke elemen indikator dots
-      dotsContainer.querySelectorAll('.dot').forEach(dot => {
-        dot.addEventListener('click', (e) => {
-          currentSlideIndex = parseInt(e.target.getAttribute('data-goto'));
-          updateSliderPosition();
-        });
-      });
-
-      modal.classList.remove('hidden');
-      document.body.style.overflow = 'hidden'; // Kunci scroll
+  if (form && successMsg) {
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      form.classList.add('hidden');
+      successMsg.classList.remove('hidden');
     });
-  });
-
-  // Kontrol tombol slider modal
-  nextBtn.addEventListener('click', () => {
-    if (totalSlides <= 1) return;
-    currentSlideIndex = (currentSlideIndex + 1) % totalSlides;
-    updateSliderPosition();
-  });
-
-  prevBtn.addEventListener('click', () => {
-    if (totalSlides <= 1) return;
-    currentSlideIndex = (currentSlideIndex - 1 + totalSlides) % totalSlides;
-    updateSliderPosition();
-  });
-
-  // Tutup modal
-  const closeModalFunc = () => {
-    modal.classList.add('hidden');
-    document.body.style.overflow = '';
+  }
+    // Tambahkan data untuk hvac, plumbing, dsb.
   };
-  closeBtn.addEventListener('click', closeModalFunc);
-  overlay.addEventListener('click', closeModalFunc);
+
+  const modal = document.getElementById('project-modal');
+  // ... (Logika buka/tutup modal, slider, & data injection) ...
 });
 
-// ... (Other functions like animateCount) ...
+function animateCount(id, target, suffix) {
+  const el = document.getElementById(id);
+  if (!el) return;
+
+  let current = 0;
+  const step = Math.max(1, Math.floor(target / 40));
+  const interval = setInterval(() => {
+    current += step;
+    if (current >= target) {
+      current = target;
+      clearInterval(interval);
+    }
+    el.textContent = `${current}${suffix}`;
+  }, 30);
+}
