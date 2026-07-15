@@ -253,45 +253,16 @@ nav {
   box-shadow: 0 12px 28px rgba(217, 119, 6, 0.28);
 }
 
-/* ---------- Stats ---------- */
-.stats-section,
 .section,
 footer {
   padding: 4.5rem 1.5rem;
-}
-
-.stats-grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.stat-card {
-  background: linear-gradient(135deg, rgba(217, 119, 6, 0.14), rgba(255, 255, 255, 0.03));
-  border: 1px solid rgba(217, 119, 6, 0.2);
-  border-radius: var(--radius-md);
-  padding: 1.6rem 1rem;
-  text-align: center;
-}
-
-.stat-number {
-  font-family: 'DM Mono', monospace;
-  font-size: 2rem;
-  font-weight: 500;
-  color: var(--accent);
-}
-
-.stat-card p {
-  margin: 0.4rem 0 0;
-  color: var(--muted);
-  font-size: 0.92rem;
 }
 
 .glow-line {
   height: 3px;
   background: linear-gradient(90deg, transparent, var(--accent), transparent);
   width: min(28rem, 90%);
-  margin: 0 auto;
+  margin: 3rem auto 0;
 }
 
 /* ---------- Section heading ---------- */
@@ -639,11 +610,21 @@ footer {
 .prev-btn { left: 0.8rem; }
 .next-btn { right: 0.8rem; }
 
+.slide-caption {
+  margin: 0;
+  padding: 0.9rem 1.25rem 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  min-height: 1.6em;
+  text-align: center;
+}
+
 .slider-dots {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
-  padding: 1rem;
+  padding: 0.6rem 1rem 1rem;
 }
 
 .slider-dots button {
@@ -733,7 +714,6 @@ footer {
 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
-  .stats-grid,
   .projects-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -773,7 +753,6 @@ footer {
     gap: 0.2rem;
   }
 
-  .stats-grid,
   .projects-grid {
     grid-template-columns: 1fr;
   }

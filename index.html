@@ -45,28 +45,6 @@
         </div>
       </section>
 
-      <!-- Stats -->
-      <section class="stats-section">
-        <div class="container stats-grid">
-          <div class="stat-card fade-up">
-            <div class="stat-number" id="stat-years">0</div>
-            <p>tahun pengalaman</p>
-          </div>
-          <div class="stat-card fade-up">
-            <div class="stat-number" id="stat-projects">0</div>
-            <p>proyek selesai</p>
-          </div>
-          <div class="stat-card fade-up">
-            <div class="stat-number" id="stat-clients">0</div>
-            <p>klien puas</p>
-          </div>
-          <div class="stat-card fade-up">
-            <div class="stat-number" id="stat-systems">0</div>
-            <p>unit sistem terpasang</p>
-          </div>
-        </div>
-      </section>
-
       <div class="glow-line"></div>
 
       <!-- Projects -->
@@ -155,6 +133,7 @@
                 <i data-lucide="chevron-right"></i>
               </button>
             </div>
+            <p class="slide-caption" id="modal-slide-caption"></p>
             <div class="slider-dots" id="modal-slider-dots"></div>
           </div>
 
@@ -170,6 +149,14 @@
         </div>
       </div>
     </div>
+
+    <!-- Data proyek: satu file per kategori, taruh foto di folder image/<kategori>/ -->
+    <script src="data/electrical.js"></script>
+    <script src="data/hvac.js"></script>
+    <script src="data/plumbing.js"></script>
+    <script src="data/testing.js"></script>
+    <script src="data/inspection.js"></script>
+    <script src="data/mechanical.js"></script>
 
     <script src="script.js"></script>
   </body>
