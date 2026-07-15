@@ -1,4 +1,3 @@
-@@ -1,57 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
   lucide.createIcons();
 
