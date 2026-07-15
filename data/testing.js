@@ -13,8 +13,8 @@ window.projectData.push({
     'Setiap instalasi diuji secara menyeluruh — continuity test, insulation resistance, hingga earth resistance — untuk memastikan sistem aman sebelum dioperasikan.',
   highlights: ['Continuity & insulation test', 'Earth resistance test', 'Dokumentasi hasil pengujian'],
   images: [
-    { src: 'image/testing/01.jpg', caption: 'Pengukuran continuity test.' },
-    { src: 'image/testing/02.jpg', caption: 'Pengujian insulation resistance.' },
-    { src: 'image/testing/03.jpg', caption: 'Dokumentasi hasil pengujian.' },
+    { src: 'image/testing/01.jpg', caption: 'Pengukuran continuity test' },
+    { src: 'image/testing/02.jpg', caption: 'Pengujian insulation resistance' },
+    { src: 'image/testing/03.jpg', caption: 'Dokumentasi hasil pengujian' },
   ],
 });
