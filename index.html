@@ -4,53 +4,57 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio MEP</title>
-  <!-- ... (Link fonts dan Lucide icons tetap sama) ... -->
-  <link rel="stylesheet" href="styles.css" />
+  <!-- ... head content from original ... -->
 </head>
 <body>
-  <!-- ... (Struktur Nav, Hero, Stats tetap sama) ... -->
-  
-  <section id="projects" class="section">
-    <div class="container">
-      <!-- ... (Heading) ... -->
-      <div class="projects-grid">
-        <!-- Tambahkan data-project="kategori" untuk mentrigger modal -->
-        <article class="project-card fade-up" data-project="electrical" style="cursor: pointer;">
-          <!-- ... konten kartu ... -->
-        </article>
-        <!-- Tambahkan data-project pada kartu lainnya -->
+  <!-- ... navbar, hero, and stats sections ... -->
+
+    <section id="projects" class="section">
+      <div class="container">
+        <!-- ... section-heading ... -->
+        <div class="projects-grid">
+          <!-- Add data-index="0" through "5" to the article tags for mapping to the JS array -->
+          <article class="project-card fade-up" data-index="0" style="cursor: pointer;">
+            <!-- ... content for project 1 ... -->
+          </article>
+          <article class="project-card fade-up" data-index="1" style="cursor: pointer;">
+            <!-- ... content for project 2 ... -->
+          </article>
+          <!-- ... additional projects (2-5) with corresponding index ... -->
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ... (Section About & Footer) ... -->
+  <!-- ... about section ... -->
 
-  <!-- MODAL POPUP ELEGAN (Taruh di akhir body) -->
+  <!-- MODAL POP-UP (Insert at the end of <body>) -->
   <div id="project-modal" class="modal hidden">
     <div class="modal-overlay"></div>
     <div class="modal-wrapper">
-      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <button class="modal-close" aria-label="Close modal"><i data-lucide="x"></i></button>
       <div class="modal-content-layout">
+        <!-- Left: Gallery, Right: Info -->
         <div class="modal-gallery-side">
           <div class="slider-container">
             <div class="slider-track" id="modal-slider-track"></div>
-            <button class="slider-btn prev-btn" id="modal-prev-btn">&#10094;</button>
-            <button class="slider-btn next-btn" id="modal-next-btn">&#10095;</button>
+            <button class="slider-btn prev-btn" id="modal-prev-btn"><i data-lucide="chevron-left"></i></button>
+            <button class="slider-btn next-btn" id="modal-next-btn"><i data-lucide="chevron-right"></i></button>
           </div>
           <div class="slider-dots" id="modal-slider-dots"></div>
         </div>
         <div class="modal-info-side">
           <span class="tag" id="modal-tag"></span>
-          <h3 id="modal-title"></h3>
+          <h3 id="modal-title" class="font-heading"></h3>
           <div class="modal-scroll-text">
-            <p id="modal-desc-main"></p>
-            <h4>Detail Scope Pekerjaan:</h4>
-            <ul id="modal-technical-list"></ul>
+            <p id="modal-desc-long"></p>
+            <h4>Key Highlights / Scope:</h4>
+            <ul id="modal-highlights-list"></ul>
           </div>
         </div>
       </div>
     </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
