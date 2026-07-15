@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio MEP</title>
+    <title>Arda MEP — Portofolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <script src="https://unpkg.com/lucide@0.263.0/dist/umd/lucide.min.js"></script>
@@ -16,7 +16,7 @@
   <body>
     <nav>
       <div class="nav-inner">
-        <a href="#hero" class="logo">Arda Portofolio</a>
+        <a href="#hero" class="logo">Arda<span>.MEP</span></a>
         <div class="nav-links">
           <a href="#hero">Beranda</a>
           <a href="#projects">Proyek</a>
@@ -26,30 +26,26 @@
     </nav>
 
     <main>
+      <!-- Hero -->
       <section id="hero" class="hero">
         <img src="image/hero.jpg" alt="Konstruksi MEP modern" class="hero-image" />
         <div class="hero-content">
-          <p class="eyebrow">Portofolio Mechanical, Electrical & Plumbing</p>
-          <h1>Solusi konstruksi MEP yang andal, efisien, dan siap di lapangan.</h1>
-          <p>
-            Saya Siap membantu proyek komersial dan industri dengan desain, instalasi,
-            dan pemeliharaan sistem MEP yang presisi.
+          <p class="eyebrow hero-text">Mechanical · Electrical · Plumbing</p>
+          <h1 class="hero-text">Sistem MEP yang andal, presisi, dan siap di lapangan.</h1>
+          <p class="hero-text">
+            Saya membantu proyek komersial dan industri dengan desain, instalasi, dan
+            pemeliharaan sistem MEP — dari panel listrik hingga jaringan pipa.
           </p>
-          <a href="#projects" class="button-primary">Lihat proyek</a>
+          <a href="#projects" class="button-primary hero-text">
+            Lihat proyek <i data-lucide="arrow-down-right"></i>
+          </a>
+        </div>
+        <div class="scroll-cue" aria-hidden="true">
+          <span></span>
         </div>
       </section>
-<main>
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
-    <img src="image/hero.jpg" alt="Konstruksi MEP modern" class="hero-image" />
-    <div class="hero-content">
-      <p class="eyebrow">Portofolio Mechanical, Electrical & Plumbing</p>
-      <h1>Solusi konstruksi MEP yang andal, efisien, dan siap di lapangan.</h1>
-      <p>Saya Siap membantu proyek komersial dan industri dengan desain, instalasi, dan pemeliharaan sistem MEP yang presisi.</p>
-      <a href="#projects" class="button-primary">Lihat proyek</a>
-    </div>
-  </section>
 
+      <!-- Stats -->
       <section class="stats-section">
         <div class="container stats-grid">
           <div class="stat-card fade-up">
@@ -70,135 +66,36 @@
           </div>
         </div>
       </section>
-  <!-- Stats Section -->
-  <section class="stats-section">
-    <div class="container stats-grid">
-      <div class="stat-card fade-up">
-        <div class="stat-number" id="stat-years">0</div>
-        <p>tahun pengalaman</p>
-      </div>
-      <div class="stat-card fade-up">
-        <div class="stat-number" id="stat-projects">0</div>
-        <p>proyek selesai</p>
-      </div>
-      <div class="stat-card fade-up">
-        <div class="stat-number" id="stat-clients">0</div>
-        <p>klien puas</p>
-      </div>
-      <div class="stat-card fade-up">
-        <div class="stat-number" id="stat-systems">0</div>
-        <p>unit sistem terpasang</p>
-      </div>
-    </div>
-  </section>
 
       <div class="glow-line"></div>
-  <div class="glow-line"></div>
 
+      <!-- Projects -->
       <section id="projects" class="section">
         <div class="container">
           <div class="section-heading fade-up">
-            <h2>Work Experience</h2>
+            <p class="eyebrow">Work Experience</p>
+            <h2>Proyek &amp; dokumentasi lapangan</h2>
             <p>
-              Dari gedung perkantoran hingga fasilitas industri, Saya mengutamakan
-              kualitas, keselamatan, dan ketepatan waktu.
+              Dari gedung perkantoran hingga fasilitas industri. Klik kartu untuk membuka
+              galeri foto site dan rincian teknis tiap pekerjaan.
             </p>
-  <!-- PROJECTS SECTION (Diperbarui untuk modal) -->
-  <section id="projects" class="section">
-    <div class="container">
-      <div class="section-heading fade-up">
-        <h2>Work Experience & Portfolio</h2>
-        <p>Klik pada kartu kategori untuk melihat dokumentasi foto *site* lapangan dan penjelasan teknis lengkap.</p>
-      </div>
-      <div class="projects-grid">
-        <!-- Kartu Proyek dengan data-project atribut -->
-        <article class="project-card fade-up" data-project="electrical" role="button" tabindex="0">
-          <div class="image-wrapper"><img src="image/project-1.jpg" alt="Sistem listrik gedung" /></div>
-          <div class="project-body">
-            <span class="tag">Electrical</span>
-            <h3>Distribusi listrik modern</h3>
-            <p>Instalasi panel, kabel utama, dan sistem tenaga bangunan komersial.</p>
-            <span class="read-more">Lihat Galeri & Detail <i data-lucide="arrow-right"></i></span>
           </div>
-        </article>
-        <!-- Tambahkan artikel project-card lainnya dengan struktur serupa (hvac, plumbing, dll) -->
-      </div>
-    </div>
-  </section>
 
-          <div class="projects-grid">
-            <article class="project-card fade-up">
-              <img src="image/project-1.jpg" alt="Sistem listrik gedung" />
-              <div class="project-body">
-                <span class="tag">Electrical</span>
-                <h3>Distribusi listrik modern</h3>
-                <p>Instalasi panel, kabel, dan sistem tenaga untuk bangunan komersial.</p>
-              </div>
-            </article>
-            <article class="project-card fade-up">
-              <img src="image/project-2.jpg" alt="Sistem HVAC" />
-              <div class="project-body">
-                <span class="tag">HVAC</span>
-                <h3>Ventilasi dan pendinginan</h3>
-                <p>Optimasi aliran udara dan efisiensi energi untuk ruangan besar.</p>
-              </div>
-            </article>
-            <article class="project-card fade-up">
-              <img src="image/project-3.jpg" alt="Sistem plumbing" />
-              <div class="project-body">
-                <span class="tag">Plumbing</span>
-                <h3>Jaringan air bersih</h3>
-                <p>Desain pipa, drainase, dan sistem sanitasi yang tahan lama.</p>
-              </div>
-            </article>
-            <article class="project-card fade-up">
-              <img src="image/project-4.jpg" alt="Proyek konstruksi site" />
-              <div class="project-body">
-                <span class="tag">Testing</span>
-                <h3>Continuity Test & Resistance Test</h3>
-                <p>Pengetesan Instalasi Yang Terpasang</p>
-              </div>
-            </article>
-            <article class="project-card fade-up">
-              <img src="image/project-5.jpg" alt="Inspeksi engineering" />
-              <div class="project-body">
-                <span class="tag">Inspection</span>
-                <h3>Inspeksi teknis</h3>
-                <p>Audit berkala agar seluruh sistem tetap aman dan berfungsi.</p>
-              </div>
-            </article>
-            <article class="project-card fade-up">
-              <img src="image/project-6.jpg" alt="Ruang mekanikal" />
-              <div class="project-body">
-                <span class="tag">Mechanical</span>
-                <h3>Ruang mekanikal tertata</h3>
-                <p>Penyusunan sistem mekanikal yang rapi, aksesibel, dan mudah dirawat.</p>
-              </div>
-            </article>
+          <div class="projects-grid" id="projects-grid">
+            <!-- Cards are rendered by script.js from window.projectData -->
           </div>
-  <!-- About Section -->
-  <section id="about" class="section about-section">
-    <div class="container about-grid">
-      <div class="fade-up about-content">
-        <h2>Tentang Saya</h2>
-        <p>Profesional MEP fokus pada instalasi, koordinasi proyek, dan solusi teknis presisi.</p>
-        <div class="pill-list">
-          <span>Design Review</span>
-          <span>Installation</span>
-          <span>Commissioning</span>
         </div>
       </section>
-      </div>
-    </div>
-  </section>
 
+      <!-- About -->
       <section id="about" class="section about-section">
         <div class="container about-grid">
           <div class="fade-up about-content">
-            <h2>Tentang Saya</h2>
+            <p class="eyebrow">Tentang Saya</p>
+            <h2>Profesional MEP, fokus pada eksekusi lapangan.</h2>
             <p>
-              Saya adalah profesional di bidang MEP yang fokus pada instalasi, koordinasi proyek,
-              dan solusi teknis yang presisi untuk bangunan komersial dan industri.
+              Saya adalah profesional di bidang MEP yang fokus pada instalasi, koordinasi
+              proyek, dan solusi teknis yang presisi untuk bangunan komersial dan industri.
             </p>
             <div class="pill-list">
               <span>Design Review</span>
@@ -206,6 +103,7 @@
               <span>Commissioning</span>
               <span>Maintenance</span>
             </div>
+
             <div class="contact-block">
               <h3>Hubungi Saya</h3>
               <p>Siap membantu proyek Anda dengan pendekatan MEP yang profesional.</p>
@@ -227,42 +125,52 @@
                 </a>
               </div>
             </div>
-  <!-- DYNAMIC MODAL CONTAINER (Wajib ditambahkan di akhir main) -->
-  <div id="project-modal" class="modal hidden">
-    <div class="modal-overlay"></div>
-    <div class="modal-wrapper">
-      <button class="modal-close" aria-label="Close modal"><i data-lucide="x"></i></button>
-      <div class="modal-content-layout">
-        <div class="modal-gallery-side">
-          <div class="slider-container">
-            <div class="slider-track" id="modal-slider-track"></div>
-            <button class="slider-btn prev-btn" id="modal-prev-btn"><i data-lucide="chevron-left"></i></button>
-            <button class="slider-btn next-btn" id="modal-next-btn"><i data-lucide="chevron-right"></i></button>
           </div>
+
           <div class="about-image fade-up">
             <img src="image/about.jpg" alt="Tim engineer MEP" />
-          <div class="slider-dots" id="modal-slider-dots"></div>
-        </div>
-        <div class="modal-info-side">
-          <span class="tag" id="modal-tag"></span>
-          <h3 id="modal-title"></h3>
-          <div class="modal-scroll-text">
-            <p id="modal-desc-main"></p>
-            <h4>Detail Teknis:</h4>
-            <ul id="modal-technical-list"></ul>
           </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <p>© 2026 MEP Studio — Konstruksi dan sistem yang terintegrasi.</p>
+      <p>© 2026 Arda MEP — Konstruksi dan sistem yang terintegrasi.</p>
     </footer>
+
+    <!-- Project modal (populated by script.js) -->
+    <div id="project-modal" class="modal hidden" aria-hidden="true">
+      <div class="modal-overlay" data-close-modal></div>
+      <div class="modal-wrapper" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" data-close-modal aria-label="Tutup"><i data-lucide="x"></i></button>
+
+        <div class="modal-content-layout">
+          <div class="modal-gallery-side">
+            <div class="slider-container">
+              <div class="slider-track" id="modal-slider-track"></div>
+              <button class="slider-btn prev-btn" id="modal-prev-btn" aria-label="Foto sebelumnya">
+                <i data-lucide="chevron-left"></i>
+              </button>
+              <button class="slider-btn next-btn" id="modal-next-btn" aria-label="Foto berikutnya">
+                <i data-lucide="chevron-right"></i>
+              </button>
+            </div>
+            <div class="slider-dots" id="modal-slider-dots"></div>
+          </div>
+
+          <div class="modal-info-side">
+            <span class="tag" id="modal-tag"></span>
+            <h3 id="modal-title"></h3>
+            <div class="modal-scroll-text">
+              <p id="modal-desc-main"></p>
+              <h4>Detail Teknis</h4>
+              <ul id="modal-technical-list"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
 </html>
-      </div>
-    </div>
-  </div>
-</main>
