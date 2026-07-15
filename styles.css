@@ -1,7 +1,8 @@
-/* Styling Modal, Slider, dan Grid */
-.modal { position: fixed; inset: 0; z-index: 100; display: flex; align-items: center; justify-content: center; padding: 1.5rem; }
-.modal.hidden { display: none; }
-.modal-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(5px); }
-.modal-wrapper { position: relative; z-index: 102; background: #141414; border-radius: 1.5rem; width: 100%; max-width: 960px; overflow: hidden; }
-.modal-content-layout { display: grid; grid-template-columns: 1.1fr 0.9fr; }
-/* ... (Tambahkan styling .slider-container, .modal-info-side, dll untuk responsivitas) ... */
+:root { --bg: #0a0a0a; --accent: #d97706; --text: #f5f5f5; --panel: rgba(255, 255, 255, 0.04); }
+body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; }
+/* ... Tambahkan CSS lengkap di sini ... */
+.modal { position: fixed; inset: 0; z-index: 200; display: flex; align-items: center; justify-content: center; padding: 1.5rem; }
+.modal.hidden { opacity: 0; visibility: hidden; }
+.modal-overlay { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(8px); }
+.modal-content { position: relative; background: #121212; border-radius: 1.5rem; width: 100%; max-width: 980px; max-height: 85vh; overflow-y: auto; z-index: 10; }
+/* ... CSS lainnya untuk kartu dan responsivitas ... */
