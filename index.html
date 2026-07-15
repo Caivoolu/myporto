@@ -1,101 +1,98 @@
-<main>
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
-    <img src="image/hero.jpg" alt="Konstruksi MEP modern" class="hero-image" />
-    <div class="hero-content">
-      <p class="eyebrow">Portofolio Mechanical, Electrical & Plumbing</p>
-      <h1>Solusi konstruksi MEP yang andal, efisien, dan siap di lapangan.</h1>
-      <p>Saya Siap membantu proyek komersial dan industri dengan desain, instalasi, dan pemeliharaan sistem MEP yang presisi.</p>
-      <a href="#projects" class="button-primary">Lihat proyek</a>
-    </div>
-  </section>
-
-  <!-- Stats Section -->
-  <section class="stats-section">
-    <div class="container stats-grid">
-      <div class="stat-card fade-up">
-        <div class="stat-number" id="stat-years">0</div>
-        <p>tahun pengalaman</p>
-      </div>
-      <div class="stat-card fade-up">
-        <div class="stat-number" id="stat-projects">0</div>
-        <p>proyek selesai</p>
-      </div>
-      <div class="stat-card fade-up">
-        <div class="stat-number" id="stat-clients">0</div>
-        <p>klien puas</p>
-      </div>
-      <div class="stat-card fade-up">
-        <div class="stat-number" id="stat-systems">0</div>
-        <p>unit sistem terpasang</p>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio MEP - Yusuf Ardabili</title>
+  <link rel="preconnect" href="https://googleapis.com" />
+  <link rel="preconnect" href="https://gstatic.com" crossorigin />
+  <link href="https://googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="#hero" class="logo">Arda Portofolio</a>
+      <div class="nav-links">
+        <a href="#hero">Beranda</a>
+        <a href="#projects">Proyek</a>
+        <a href="#about">Tentang</a>
       </div>
     </div>
-  </section>
+  </nav>
 
-  <div class="glow-line"></div>
-
-  <!-- PROJECTS SECTION (Diperbarui untuk modal) -->
-  <section id="projects" class="section">
-    <div class="container">
-      <div class="section-heading fade-up">
-        <h2>Work Experience & Portfolio</h2>
-        <p>Klik pada kartu kategori untuk melihat dokumentasi foto *site* lapangan dan penjelasan teknis lengkap.</p>
+  <main>
+    <section id="hero" class="hero">
+      <img src="image/hero.jpg" alt="Konstruksi MEP modern" class="hero-image" />
+      <div class="hero-content">
+        <p class="eyebrow">Portofolio Mechanical, Electrical & Plumbing</p>
+        <h1>Solusi konstruksi MEP yang andal, efisien, dan siap di lapangan.</h1>
+        <a href="#projects" class="button-primary">Lihat proyek</a>
       </div>
-      <div class="projects-grid">
-        <!-- Kartu Proyek dengan data-project atribut -->
-        <article class="project-card fade-up" data-project="electrical" role="button" tabindex="0">
-          <div class="image-wrapper"><img src="image/project-1.jpg" alt="Sistem listrik gedung" /></div>
-          <div class="project-body">
-            <span class="tag">Electrical</span>
-            <h3>Distribusi listrik modern</h3>
-            <p>Instalasi panel, kabel utama, dan sistem tenaga bangunan komersial.</p>
-            <span class="read-more">Lihat Galeri & Detail <i data-lucide="arrow-right"></i></span>
-          </div>
-        </article>
-        <!-- Tambahkan artikel project-card lainnya dengan struktur serupa (hvac, plumbing, dll) -->
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="section about-section">
-    <div class="container about-grid">
-      <div class="fade-up about-content">
-        <h2>Tentang Saya</h2>
-        <p>Profesional MEP fokus pada instalasi, koordinasi proyek, dan solusi teknis presisi.</p>
-        <div class="pill-list">
-          <span>Design Review</span>
-          <span>Installation</span>
-          <span>Commissioning</span>
+    <section class="stats-section">
+      <div class="container stats-grid">
+        <div class="stat-card fade-up"><div class="stat-number" id="stat-years">0</div><p>tahun pengalaman</p></div>
+        <div class="stat-card fade-up"><div class="stat-number" id="stat-projects">0</div><p>proyek selesai</p></div>
+        <div class="stat-card fade-up"><div class="stat-number" id="stat-clients">0</div><p>klien puas</p></div>
+        <div class="stat-card fade-up"><div class="stat-number" id="stat-systems">0</div><p>unit sistem terpasang</p></div>
+      </div>
+    </section>
+
+    <div class="glow-line"></div>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-heading fade-up">
+          <h2>Work Experience</h2>
+          <p>Kualitas, keselamatan, dan ketepatan waktu. Klik kategori untuk detail foto.</p>
+        </div>
+        <div class="projects-grid">
+          <!-- Kategori Proyek: Electrical, HVAC, Plumbing, Testing, Inspection, Mechanical -->
+          <article class="project-card fade-up" data-category="electrical">
+            <div class="project-img-container"><img src="image/project-1.jpg" alt="Sistem listrik" /></div>
+            <div class="project-body"><span class="tag">Electrical</span><h3>Distribusi listrik</h3><span class="view-detail-btn">Lihat Detail &rarr;</span></div>
+          </article>
+          <!-- ... Tambahkan card lainnya di sini ... -->
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- DYNAMIC MODAL CONTAINER (Wajib ditambahkan di akhir main) -->
+    <section id="about" class="section about-section">
+      <div class="container about-grid">
+        <div class="fade-up about-content">
+          <h2>Tentang Saya</h2>
+          <p>Profesional MEP fokus pada instalasi dan solusi teknis presisi.</p>
+          <div class="contact-block">
+            <h3>Hubungi Saya</h3>
+            <div class="social-links">
+              <a href="https://wa.me" target="_blank" class="social-link whatsapp"><i data-lucide="message-circle"></i></a>
+              <a href="mailto:yarda409@gmail.com" class="social-link gmail"><i data-lucide="mail"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="about-image fade-up"><img src="image/about.jpg" alt="About" /></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL POPUP -->
   <div id="project-modal" class="modal hidden">
     <div class="modal-overlay"></div>
-    <div class="modal-wrapper">
-      <button class="modal-close" aria-label="Close modal"><i data-lucide="x"></i></button>
-      <div class="modal-content-layout">
-        <div class="modal-gallery-side">
-          <div class="slider-container">
-            <div class="slider-track" id="modal-slider-track"></div>
-            <button class="slider-btn prev-btn" id="modal-prev-btn"><i data-lucide="chevron-left"></i></button>
-            <button class="slider-btn next-btn" id="modal-next-btn"><i data-lucide="chevron-right"></i></button>
-          </div>
-          <div class="slider-dots" id="modal-slider-dots"></div>
-        </div>
-        <div class="modal-info-side">
-          <span class="tag" id="modal-tag"></span>
-          <h3 id="modal-title"></h3>
-          <div class="modal-scroll-text">
-            <p id="modal-desc-main"></p>
-            <h4>Detail Teknis:</h4>
-            <ul id="modal-technical-list"></ul>
-          </div>
+    <div class="modal-content">
+      <button class="modal-close-btn">&times;</button>
+      <div class="modal-grid">
+        <div class="modal-gallery"><div class="slider-wrapper"><div id="modal-images-track" class="slider-track"></div></div></div>
+        <div class="modal-info">
+          <span id="modal-tag" class="tag"></span>
+          <h2 id="modal-title"></h2>
+          <p id="modal-desc"></p>
         </div>
       </div>
     </div>
   </div>
-</main>
+  <script src="script.js"></script>
+</body>
+</html>
