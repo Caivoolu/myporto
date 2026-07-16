@@ -7,11 +7,11 @@ window.projectData = window.projectData || [];
 window.projectData.push({
   key: 'inspection',
   tag: 'Inspection',
-  title: 'Inspeksi teknis',
-  shortDescription: 'Audit berkala agar seluruh sistem tetap aman dan berfungsi.',
+  title: 'Supervisi inspeksi teknis',
+  shortDescription: 'Audit lapangan dan pemeriksaan sistem secara berkala agar standar kualitas, keselamatan, dan dokumentasi tetap terjaga.',
   longDescription:
-    'Proses inspeksi dilakukan secara menyeluruh untuk memastikan sistem MEP tetap aman, efisien, dan siap digunakan.',
-  highlights: ['Checklist keselamatan', 'Uji fungsi sistem', 'Laporan pemeliharaan'],
+    'Inspeksi teknis merupakan bagian inti dari peran supervisor dalam memastikan seluruh sistem aman, berfungsi, dan sesuai requirement proyek.',
+  highlights: ['Checklist keselamatan', 'Pemeriksaan hasil instalasi', 'Laporan dan follow-up tindakan'],
   images: [
     { src: 'image/inspection/01.jpg', caption: 'Audit checklist keselamatan.' },
     { src: 'image/inspection/02.jpg', caption: 'Uji fungsi sistem terpasang.' },

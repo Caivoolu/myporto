@@ -7,11 +7,11 @@ window.projectData = window.projectData || [];
 window.projectData.push({
   key: 'testing',
   tag: 'Testing',
-  title: 'Continuity test & resistance test',
-  shortDescription: 'Pengetesan instalasi yang terpasang sebelum serah terima.',
+  title: 'Supervisi testing & commissioning',
+  shortDescription: 'Pengawasan dan pelaksanaan testing instalasi untuk memastikan kualitas dan keamanan sebelum serah terima.',
   longDescription:
-    'Setiap instalasi diuji secara menyeluruh — continuity test, insulation resistance, hingga earth resistance — untuk memastikan sistem aman sebelum dioperasikan.',
-  highlights: ['Continuity & insulation test', 'Earth resistance test', 'Dokumentasi hasil pengujian'],
+    'Aktivitas testing menjadi bagian penting dari peran supervisi, mencakup continuity test, insulation resistance, earth resistance, dan verifikasi hasil sebelum commissioning.',
+  highlights: ['Pengawasan continuity test', 'Insulation & earth resistance', 'Dokumentasi hasil dan approval'],
   images: [
     { src: 'image/testing/01.jpg', caption: 'Pengukuran continuity test' },
     { src: 'image/testing/02.jpg', caption: 'Pengujian insulation resistance' },
