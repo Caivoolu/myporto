@@ -12,14 +12,14 @@ window.projectData = window.projectData || [];
 window.projectData.push({
   key: 'electrical',
   tag: 'Electrical',
-  title: 'Distribusi listrik modern',
-  shortDescription: 'Instalasi panel, kabel, dan sistem tenaga untuk bangunan komersial.',
+  title: 'Instalasi panel & distribusi listrik',
+  shortDescription: 'Kegiatan instalasi panel, kabel, testing, dan inspeksi teknis dalam satu alur pekerjaan electrical.',
   longDescription:
-    'Proyek ini mencakup desain jaringan distribusi listrik, pemasangan panel utama, serta integrasi sistem tenaga yang aman dan terukur untuk bangunan komersial.',
-  highlights: ['Panel utama dan subpanel', 'Jalur kabel terorganisir', 'Sistem proteksi dan monitoring'],
+    'Dokumentasi ini menampilkan eksekusi pekerjaan electrical dari instalasi panel dan pemasangan kabel, hingga testing serta inspeksi teknis untuk memastikan sistem siap pakai dan aman.',
+  highlights: ['Instalasi panel utama dan subpanel', 'Pemasangan kabel dan tray', 'Testing & inspection teknis'],
   images: [
     { src: 'image/electrical/01.jpg', caption: 'Pemasangan panel distribusi utama.' },
-    { src: 'image/electrical/02.jpg', caption: 'Penataan jalur kabel tegangan menengah.' },
-    { src: 'image/electrical/03.jpg', caption: 'Pengujian sistem proteksi dan monitoring.' },
+    { src: 'image/electrical/02.jpg', caption: 'Penataan kabel dan tray distribusi.' },
+    { src: 'image/electrical/03.jpg', caption: 'Testing dan inspeksi sistem listrik.' },
   ],
 });

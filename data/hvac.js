@@ -7,14 +7,14 @@ window.projectData = window.projectData || [];
 window.projectData.push({
   key: 'hvac',
   tag: 'LPS',
-  title: 'Sistem Proteksi Petir',
-  shortDescription: 'Mengendalikan jalur arus listrik ekstrem dan membatasi tegangan berlebih demi keselamatan struktur serta perangkat elektronik..',
+  title: 'Instalasi sistem proteksi petir',
+  shortDescription: 'Pelaksanaan instalasi air terminal, down conductor, fitbox, dan pengujian sistem proteksi petir.',
   longDescription:
-    'merancang sistem proteksi petir yang menjaga keselamatan struktur, meminimalkan risiko kerusakan perangkat elektronik, dan memudahkan maintenance di area operasional.',
-  highlights: ['Instalasi Air Termnial', 'Instalasi FitBox', 'Kontrol kelembaban dan sirkulasi'],
+    'Pekerjaan proteksi petir mencakup instalasi air terminal, down conductor, fitbox, serta pemeriksaan dan pengujian untuk memastikan sistem berfungsi aman dan sesuai standar.',
+  highlights: ['Instalasi air terminal', 'Instalasi down conductor & fitbox', 'Pengujian dan inspeksi sistem'],
   images: [
-    { src: 'image/hvac/01.jpg', caption: 'Instalasi Air Terminal' },
-    { src: 'image/hvac/02.jpg', caption: 'Instalasi FitBox' },
-    { src: 'image/hvac/03.jpg', caption: 'Pengecekan kualitas dan aliran udara.' },
+    { src: 'image/hvac/01.jpg', caption: 'Instalasi air terminal.' },
+    { src: 'image/hvac/02.jpg', caption: 'Instalasi down conductor dan fitbox.' },
+    { src: 'image/hvac/03.jpg', caption: 'Pengecekan dan pengujian sistem proteksi petir.' },
   ],
 });
