@@ -1,6 +1,13 @@
 // window.projectData is built up by the files in /data/*.js — one file per
 // category, loaded before this script. Each pushes one project object.
 
+const FALLBACK_IMAGE = 'image/placeholder.svg';
+
+function renderProjectImage(img, alt = 'Foto proyek') {
+  const src = img?.src || FALLBACK_IMAGE;
+  return `<img src="${src}" alt="${alt}" loading="lazy" onerror="this.onerror=null;this.src='${FALLBACK_IMAGE}';" />`;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   renderProjectCards();
   lucide.createIcons();
@@ -15,10 +22,12 @@ function renderProjectCards() {
 
   grid.innerHTML = window.projectData
     .map(
-      (project, index) => `
+      (project, index) => {
+        const firstImage = project.images?.[0] || { src: FALLBACK_IMAGE, caption: project.title };
+        return `
       <article class="project-card fade-up" data-project-index="${index}" role="button" tabindex="0" aria-label="Buka detail proyek ${project.title}">
         <div class="image-wrapper">
-          <img src="${project.images[0].src}" alt="${project.images[0].caption}" />
+          ${renderProjectImage(firstImage, firstImage.caption)}
         </div>
         <div class="project-body">
           <span class="tag">${project.tag}</span>
@@ -26,7 +35,8 @@ function renderProjectCards() {
           <p>${project.shortDescription}</p>
           <span class="read-more">Lihat galeri &amp; detail <i data-lucide="arrow-right"></i></span>
         </div>
-      </article>`
+      </article>`;
+      }
     )
     .join('');
 }
@@ -77,11 +87,13 @@ function initModal() {
     descEl.textContent = project.longDescription;
     listEl.innerHTML = project.highlights.map((item) => `<li>${item}</li>`).join('');
 
-    track.innerHTML = project.images
-      .map((img) => `<img src="${img.src}" alt="${img.caption}" />`)
+    const images = project.images?.length ? project.images : [{ src: FALLBACK_IMAGE, caption: project.title }];
+
+    track.innerHTML = images
+      .map((img) => renderProjectImage(img, img.caption || 'Foto proyek'))
       .join('');
 
-    dotsWrap.innerHTML = project.images
+    dotsWrap.innerHTML = images
       .map((_, i) => `<button type="button" aria-label="Foto ${i + 1}" data-slide="${i}"></button>`)
       .join('');
 
@@ -103,7 +115,8 @@ function initModal() {
 
   function updateSlide() {
     if (!currentProject) return;
-    const total = currentProject.images.length;
+    const total = currentProject.images?.length || 0;
+    if (total === 0) return;
     currentSlide = (currentSlide + total) % total;
     track.style.transform = `translateX(-${currentSlide * 100}%)`;
     dotsWrap.querySelectorAll('button').forEach((dot, i) => {
