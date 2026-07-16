@@ -21,8 +21,8 @@ window.projectData.push({
     'Briefing instruksi K3 & koordinasi harian (Toolbox Meeting)'
   ], 
   images: [ 
-    { src: 'image/coordination/01.jpg', caption: 'Melakukan koordinasi gambar kerja dan sinkronisasi lintastim.' }, 
+    { src: 'image/coordination/01.jpg', caption: 'Memimpin briefing harian (toolbox meeting) sebelum pengerjaan dimulai.' }, 
     { src: 'image/coordination/02.jpg', caption: 'Inspeksi kesiapan area kerja dan material di lapangan.' }, 
-    { src: 'image/coordination/03.jpg', caption: 'Memimpin briefing harian (toolbox meeting) sebelum pengerjaan dimulai.' }, 
+    { src: 'image/coordination/03.jpg', caption: 'Melakukan koordinasi gambar kerja dan sinkronisasi lintastim.' }, 
   ], 
 });
