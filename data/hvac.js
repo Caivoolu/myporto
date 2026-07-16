@@ -8,7 +8,7 @@ window.projectData.push({
   key: 'hvac',
   tag: 'LPS',
   title: 'Sistem Proteksi Petir',
-  shortDescription: ': Mengendalikan jalur arus listrik ekstrem dan membatasi tegangan berlebih demi keselamatan struktur serta perangkat elektronik..',
+  shortDescription: 'Mengendalikan jalur arus listrik ekstrem dan membatasi tegangan berlebih demi keselamatan struktur serta perangkat elektronik..',
   longDescription:
     'merancang sistem proteksi petir yang menjaga keselamatan struktur, meminimalkan risiko kerusakan perangkat elektronik, dan memudahkan maintenance di area operasional.',
   highlights: ['Instalasi Air Termnial', 'Pendinginan berkapasitas tinggi', 'Kontrol kelembaban dan sirkulasi'],
