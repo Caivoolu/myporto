@@ -7,7 +7,7 @@ window.projectData = window.projectData || [];
 window.projectData.push({
   key: 'testing',
   tag: 'Testing',
-  title: 'Supervisi testing & commissioning',
+  title: 'Testing & commissioning',
   shortDescription: 'Pengawasan dan pelaksanaan testing instalasi untuk memastikan kualitas dan keamanan sebelum serah terima.',
   longDescription:
     'Aktivitas testing menjadi bagian penting dari peran supervisi, mencakup continuity test, insulation resistance, earth resistance, dan verifikasi hasil sebelum commissioning.',
