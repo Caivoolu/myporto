@@ -7,14 +7,14 @@ window.projectData = window.projectData || [];
 window.projectData.push({
   key: 'plumbing',
   tag: 'Plumbing',
-  title: 'Instruksi & koordinasi plumbing lapangan',
-  shortDescription: 'Pelaksanaan instruksi kerja, TBM pagi, koordinasi lapangan, dan pengawasan progres pekerjaan plumbing secara terarah.',
+  title: 'Jaringan air bersih',
+  shortDescription: 'Desain pipa, drainase, dan sistem sanitasi yang tahan lama.',
   longDescription:
-    'Aktivitas plumbing yang saya kelola mencakup pembagian instruksi kerja, TBM pagi, koordinasi dengan tim lapangan, serta pengawasan pelaksanaan agar pekerjaan berjalan sesuai jadwal, standar teknis, dan keselamatan.',
-  highlights: ['TBM pagi & instruksi harian', 'Koordinasi lapangan dengan tim', 'Pengawasan progres & penyelesaian pekerjaan'],
+    'Sistem plumbing yang kami bangun menekankan konsistensi aliran air, ketahanan material, dan akses perawatan yang cepat, serta didukung koordinasi lapangan yang baik dalam pelaksanaannya.',
+  highlights: ['Pipa air bersih dan limbah', 'Drainase dan venting', 'Koordinasi lapangan & sistem sanitasi'],
   images: [
-    { src: 'image/plumbing/01.jpg', caption: 'Instruksi kerja dan pembagian tugas di lapangan.' },
-    { src: 'image/plumbing/02.jpg', caption: 'Koordinasi lapangan untuk penyesuaian progres dan metode kerja.' },
-    { src: 'image/plumbing/03.jpg', caption: 'Pengawasan pelaksanaan pekerjaan plumbing secara berkala.' },
+    { src: 'image/plumbing/01.jpg', caption: 'Instalasi pipa air bersih.' },
+    { src: 'image/plumbing/02.jpg', caption: 'Jalur drainase dan venting.' },
+    { src: 'image/plumbing/03.jpg', caption: 'Pemasangan sistem sanitasi dengan koordinasi lapangan.' },
   ],
 });
