@@ -19,7 +19,7 @@ window.projectData.push({
   highlights: ['Instalasi panel utama dan subpanel', 'Pemasangan kabel dan tray', 'Supervisi testing & inspection'],
   images: [
     { src: 'image/electrical/01.jpg', caption: 'Pemasangan panel distribusi utama.' },
-    { src: 'image/electrical/02.jpg', caption: 'Penataan kabel dan tray distribusi.' },
-    { src: 'image/electrical/03.jpg', caption: 'Testing dan inspeksi sistem listrik.' },
+    { src: 'image/electrical/02.jpg', caption: 'Penataan kabel distribusi.' },
+    { src: 'image/electrical/03.jpg', caption: 'Instalasi Kabel Tray distribusi.' },
   ],
 });
