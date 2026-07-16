@@ -11,10 +11,10 @@ window.projectData.push({
   shortDescription: 'Mengendalikan jalur arus listrik ekstrem dan membatasi tegangan berlebih demi keselamatan struktur serta perangkat elektronik..',
   longDescription:
     'merancang sistem proteksi petir yang menjaga keselamatan struktur, meminimalkan risiko kerusakan perangkat elektronik, dan memudahkan maintenance di area operasional.',
-  highlights: ['Instalasi Air Termnial', 'Pendinginan berkapasitas tinggi', 'Kontrol kelembaban dan sirkulasi'],
+  highlights: ['Instalasi Air Termnial', 'Instalasi FitBox', 'Kontrol kelembaban dan sirkulasi'],
   images: [
-    { src: 'image/hvac/01.jpg', caption: 'Pemasangan ducting utama.' },
-    { src: 'image/hvac/02.jpg', caption: 'Unit pendingin berkapasitas besar.' },
+    { src: 'image/hvac/01.jpg', caption: 'Instalasi Air Terminal' },
+    { src: 'image/hvac/02.jpg', caption: 'Instalasi FitBox' },
     { src: 'image/hvac/03.jpg', caption: 'Pengecekan kualitas dan aliran udara.' },
   ],
 });
