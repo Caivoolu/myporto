@@ -10,8 +10,8 @@ window.projectData.push({
   title: 'Sistem Proteksi Petir',
   shortDescription: ': Mengendalikan jalur arus listrik ekstrem dan membatasi tegangan berlebih demi keselamatan struktur serta perangkat elektronik..',
   longDescription:
-    'Kami merancang sistem HVAC yang menjaga kenyamanan udara, meminimalkan konsumsi energi, dan memudahkan maintenance di area operasional.',
-  highlights: ['Desain ducting yang efisien', 'Pendinginan berkapasitas tinggi', 'Kontrol kelembaban dan sirkulasi'],
+    'merancang sistem proteksi petir yang menjaga keselamatan struktur, meminimalkan risiko kerusakan perangkat elektronik, dan memudahkan maintenance di area operasional.',
+  highlights: ['Instalasi Air Termnial', 'Pendinginan berkapasitas tinggi', 'Kontrol kelembaban dan sirkulasi'],
   images: [
     { src: 'image/hvac/01.jpg', caption: 'Pemasangan ducting utama.' },
     { src: 'image/hvac/02.jpg', caption: 'Unit pendingin berkapasitas besar.' },
