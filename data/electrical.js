@@ -16,7 +16,7 @@ window.projectData.push({
   shortDescription: 'Kegiatan instalasi panel, supervisi kabel, testing, dan inspeksi teknis dalam satu alur pekerjaan electrical.',
   longDescription:
     'Dokumentasi ini menampilkan eksekusi pekerjaan electrical dari instalasi panel dan pemasangan kabel, hingga supervisi testing serta inspeksi teknis untuk memastikan sistem siap pakai dan aman.',
-  highlights: ['Instalasi panel utama dan subpanel', 'Pemasangan kabel dan tray', 'Supervisi testing & inspection'],
+  highlights: ['Instalasi panel utama dan subpanel', 'Pemasangan kabel', 'Pemasangan Tray'],
   images: [
     { src: 'image/electrical/01.jpg', caption: 'Pemasangan panel distribusi utama.' },
     { src: 'image/electrical/02.jpg', caption: 'Penataan kabel distribusi.' },
