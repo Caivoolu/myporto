@@ -1,12 +1,12 @@
 /**
- * Data proyek: HVAC
+ * Data proyek: LPS
  * Foto disimpan di folder image/hvac/ — tambahkan baris baru di "images"
  * untuk menambah foto beserta keterangannya.
  */
 window.projectData = window.projectData || [];
 window.projectData.push({
   key: 'hvac',
-  tag: 'HVAC',
+  tag: 'LPS',
   title: 'Ventilasi dan pendinginan',
   shortDescription: 'Optimasi aliran udara dan efisiensi energi untuk ruangan besar.',
   longDescription:
