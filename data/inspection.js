@@ -7,7 +7,7 @@ window.projectData = window.projectData || [];
 window.projectData.push({
   key: 'inspection',
   tag: 'Inspection',
-  title: 'Supervisi inspeksi teknis',
+  title: 'Inspeksi teknis',
   shortDescription: 'Audit lapangan dan pemeriksaan sistem secara berkala agar standar kualitas, keselamatan, dan dokumentasi tetap terjaga.',
   longDescription:
     'Inspeksi teknis merupakan bagian inti dari peran supervisor dalam memastikan seluruh sistem aman, berfungsi, dan sesuai requirement proyek.',
