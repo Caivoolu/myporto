@@ -14,7 +14,7 @@ window.projectData.push({
   highlights: ['Akses perawatan mudah', 'Penataan jalur utilitas', 'Peningkatan keamanan ruang'],
   images: [
     { src: 'image/mechanical/01.jpg', caption: 'Pabrikasi Material Support.' },
-    { src: 'image/mechanical/02.jpg', caption: 'Jalur utilitas yang tertata rapi.' },
+    { src: 'image/mechanical/02.jpg', caption: 'Pabrikasi Material yang presisi.' },
     { src: 'image/mechanical/03.jpg', caption: 'Sistem terpasang dengan aman.' },
   ],
 });
