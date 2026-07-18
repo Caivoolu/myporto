@@ -13,7 +13,7 @@ window.projectData.push({
     'Ruangan mekanikal yang tertata menjadikan proses perawatan lebih sederhana dan mengurangi risiko gangguan operasional.',
   highlights: ['Akses perawatan mudah', 'Penataan jalur utilitas', 'Peningkatan keamanan ruang'],
   images: [
-    { src: 'image/mechanical/01.jpg', caption: 'Penataan ruang mekanikal.' },
+    { src: 'image/mechanical/01.jpg', caption: 'Pabrikasi Material Support.' },
     { src: 'image/mechanical/02.jpg', caption: 'Jalur utilitas yang tertata rapi.' },
     { src: 'image/mechanical/03.jpg', caption: 'Sistem terpasang dengan aman.' },
   ],
