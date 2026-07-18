@@ -18,11 +18,11 @@ window.projectData.push({
   highlights: [
     'Sinkronisasi & review gambar kerja (Shop Drawing)', 
     'Inspeksi kesiapan area & material approval', 
-    'Briefing instruksi K3 & koordinasi harian (Toolbox Meeting)'
+    'Koordinasi lintas subkontraktor & resolusi konflik area kerja (Cross-Subcon Alignment)'
   ], 
   images: [ 
     { src: 'image/coordination/01.jpg', caption: 'Memimpin briefing harian (toolbox meeting) sebelum pengerjaan dimulai.' }, 
     { src: 'image/coordination/02.jpg', caption: 'Inspeksi kesiapan area kerja dan material di lapangan.' }, 
-    { src: 'image/coordination/03.jpg', caption: 'Melakukan koordinasi gambar kerja dan sinkronisasi lintastim.' }, 
+    { src: 'image/coordination/03.jpg', caption: 'Koordinasi lintas subkontraktor' }, 
   ], 
 });
